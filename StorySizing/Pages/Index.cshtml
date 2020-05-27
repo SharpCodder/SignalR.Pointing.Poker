@@ -1,0 +1,68 @@
+﻿@page
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-2">User</div>
+            <div class="col-4"><input type="text" id="user" /></div>
+        </div>
+        <div id="session" class="row">
+            <input type="hidden" id="groupName" />
+            <div class="col-2">Session</div>
+            <div class="col-10">Your session link: <a id="sessionLink" href="#"></a></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6"><input type="button" id="join" value="Create Session" class="btn btn-primary" /></div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div id="votingButtons" class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton05" value="0.5" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton1" value="1" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton2" value="2" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton3" value="3" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton5" value="5" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton8" value="8" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton13" value="13" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton20" value="20" class="btn btn-info votingButton" />
+                <input type="button" id="sendButton100" value="100" class="btn btn-info votingButton" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div id="sessionVotes" class="row">
+        <div class="col-12">
+            <table id="messagesList" class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            User
+                        </th>
+                        <th>
+                            Vote
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="votingActionButtons" class="row">
+        <div class="col-6">
+            <input type="button" id="reveal" value="Reveal" class="btn btn-success" /> <input type="button" id="reset" value="Reset" class="btn btn-danger" />
+        </div>
+    </div>
+@section Scripts {
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/pointing.js"></script>
+    }
