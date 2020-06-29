@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorySizing", "StorySizing\StorySizing.csproj", "{F8F6F544-34E2-4B21-903D-AF34E948F086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorySizing", "StorySizing\StorySizing.csproj", "{F8F6F544-34E2-4B21-903D-AF34E948F086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
