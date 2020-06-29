@@ -16,7 +16,7 @@ namespace StorySizing.Hubs
 
             pointingSession.MemberRating.Add(new PointSessionMember() { Member = user });
             new PointingCache().LoadCacheData(pointingSession, groupName);
-            Groups.AddToGroupAsync(Context.ConnectionId, groupName);
+            await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
             await Clients.Group(groupName).SendAsync("ReceiveMessage", pointingSession.MemberRating.Select(mr => new { Member = mr.Member, HasRating = !string.IsNullOrWhiteSpace(mr.Rating) }));
 
         }
